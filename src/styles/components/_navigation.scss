@@ -1,0 +1,25 @@
+.navigation{
+
+    padding: 3vh 0;
+
+    ul{
+        display: flex;
+        flex-direction: row;
+    
+        a{
+    
+            text-transform: capitalize;
+            margin-right: 15px;
+            
+            &.nav-active{
+                
+                font-weight: bold;
+            }
+        
+            &:hover{
+                
+                color: var(--chocolate-cosmos);
+            }
+        }
+    }
+}

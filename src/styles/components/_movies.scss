@@ -1,0 +1,71 @@
+.movies-main-container{
+
+    display: flex;
+    flex-direction: column;
+
+    .search-container{
+
+        display: grid;
+        justify-content: center;
+        padding: 5vh 0;
+
+        input{
+
+            display: block;
+            margin-bottom: 2vh;
+            max-width: 200px;
+            padding: 1vh 2vh;
+            border-radius: 5px;
+            background-color: var(--white-smoke);
+            box-shadow: blue 0px 0px 0px 2px inset, var(--black) 2px -2px 0px -3px, rgb(31, 193, 27) 2px -2px, var(--black) 4px -4px 0px -3px, rgb(255, 217, 19) 4px -4px, var(--black) 6px -6px 0px -3px, rgb(255, 156, 85) 6px -6px, var(--black) 8px -8px 0px -3px, rgb(255, 85, 85) 8px -8px;  
+        }
+
+        .topflop-container{
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 0 5px;
+
+            button{
+                
+                min-height: 10vh;
+                padding: 0 15px 15px;
+                font-weight: bold;
+                background-color: var(--chocolate-cosmos);
+                color: var(--white-smoke);
+                transition: all .5s ease;
+
+                &:first-of-type{
+
+                    border-bottom-left-radius: 80px 80px;
+                    text-align: right;
+                    box-shadow: rgba(240, 46, 170, 0.4) -2px 2px, rgba(240, 46, 170, 0.3) -7px 7px, rgba(240, 46, 170, 0.2) -12px 12px, rgba(240, 46, 170, 0.1) -17px 17px, rgba(240, 46, 170, 0.05) -22px 22px;
+                    
+                    &:hover{
+                        
+                        box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+                    }
+                }
+                
+                &:last-of-type{
+                    
+                    border-bottom-right-radius: 80px 80px;
+                    text-align-last: left;
+                    box-shadow: rgba(240, 46, 170, 0.4) 2px 2px, rgba(240, 46, 170, 0.3) 7px 7px, rgba(240, 46, 170, 0.2) 12px 12px, rgba(240, 46, 170, 0.1) 17px 17px, rgba(240, 46, 170, 0.05) 22px 22px;
+                    
+                    &:hover{
+                        
+                        box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .movies-container{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
